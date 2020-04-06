@@ -52,7 +52,7 @@ app.getInfo = function () {
         }
         apiCall();
     }
-
+    console.log('haha')
     unsplashCall();
     musicCall();
 
