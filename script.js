@@ -5,7 +5,12 @@ const app = {
 
 // Collect user input
 app.collectInfo = function () {
-
+    const generateButton = document.getElementById("generateVibes");
+    for (let i = 0; i < generateButton.length; i++) {
+        generateButton[i].addEventListener("click", function (e) {
+            console.log("hello")
+        })
+    }
 };
 
 // Make an API fetch request with user inputted data
@@ -40,12 +45,7 @@ app.getInfo = function () {
         }
         apiCall();
     }
-
-    musicCall = () => {
-    }
     unsplashCall();
-    musicCall();
-
 };
 
 // Display data on the page
@@ -55,7 +55,8 @@ app.displayInfo = function () {
 
 // Start app
 app.init = function () {
-    app.getInfo();
+    // app.getInfo();
+    app.collectInfo();
 };
 
 document.addEventListener("DOMContentLoaded", function () {
