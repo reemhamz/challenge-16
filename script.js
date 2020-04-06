@@ -42,15 +42,11 @@ app.getInfo = function () {
     }
 
     musicCall = () =>{
-        const apiURL = `https://binaryjazz.us/wp-json/genrenator/v1/genre/`;
-        const apiCall = async () => {
-            await fetch(apiURL)
-                .then(result => result.json())
-                .then(musicData => {
-                console.log(musicData)
-            })
-        }
-        apiCall();
+        const audio = new Audio(`https://www.youtube.com/watch?v=5qap5aO4i9A`)
+
+        audio.play();
+
+
     }
     console.log('haha')
     unsplashCall();

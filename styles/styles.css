@@ -213,6 +213,14 @@ img {
   margin: 0 auto;
 }
 
-main {
+main #cafeImage {
   height: 100vh;
+}
+
+main .audio {
+  height: 0vh;
+}
+
+#youtube-icon {
+  height: 0vh;
 }

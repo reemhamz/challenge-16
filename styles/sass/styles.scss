@@ -23,5 +23,14 @@ img{
 }
 
 main{
-    height: 100vh;
+    #cafeImage{
+        height:100vh;
+    }
+    .audio{
+        height: 0vh;
+    }
+}
+
+#youtube-icon{
+    height: 0vh;
 }
