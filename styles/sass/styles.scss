@@ -27,10 +27,14 @@ main{
         height:100vh;
     }
     .audio{
-        height: 0vh;
+        
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        img{
+            height: 100px;
+            width: 100px;
+        }
     }
-}
-
-#youtube-icon{
-    height: 0vh;
 }

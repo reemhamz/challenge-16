@@ -218,9 +218,17 @@ main #cafeImage {
 }
 
 main .audio {
-  height: 0vh;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#youtube-icon {
-  height: 0vh;
+main .audio img {
+  height: 100px;
+  width: 100px;
 }
