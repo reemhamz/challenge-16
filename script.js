@@ -12,12 +12,11 @@ app.collectInfo = function () {
     generateButton.addEventListener(`click`, function (e) {
         e.preventDefault();
 
-        if (mainPage.style.display === "none") {
-            mainPage.style.display = "block"
-        }
+        mainPage.style.display = "block";
 
         app.getInfo();
         
+        mainPage.scrollIntoView();
     })
 
     document.body.addEventListener('click', function (e) {
@@ -60,16 +59,9 @@ app.getInfo = function () {
     unsplashCall();
 };
 
-// Display data on the page
-app.displayInfo = function () {
-
-};
-
 // Start app
 app.init = function () {
-    // app.getInfo();
     app.collectInfo();
-    
 };
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -206,6 +206,10 @@ h2 {
   font-size: 3rem;
 }
 
+h3 {
+  font-size: 1.8rem;
+}
+
 button {
   font-size: 2rem;
   width: 20%;
@@ -225,6 +229,7 @@ button:hover {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -262,29 +267,13 @@ main {
 }
 
 main #cafeImage {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 main #cafeImage img {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-}
-
-main .audio {
-  text-align: center;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .audio img {
-  height: 100px;
-  width: 100px;
 }

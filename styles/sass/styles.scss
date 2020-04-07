@@ -5,6 +5,7 @@
 
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -34,23 +35,12 @@ header{
 main{
     display: none;
     #cafeImage{
-        height:100vh;
+        min-height:100vh;
         img{
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         object-fit: cover;
         display: block;
 }
-    }
-    .audio{
-        
-        text-align: center;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        img{
-            height: 100px;
-            width: 100px;
-        }
     }
 }
