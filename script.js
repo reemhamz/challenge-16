@@ -5,12 +5,19 @@ const app = {
 
 // Collect user input
 app.collectInfo = function () {
+
+    const mainPage = document.getElementById("mainSection");
+
     const generateButton = document.getElementById("generateVibes");
     generateButton.addEventListener(`click`, function (e) {
         e.preventDefault();
+
+        if (mainPage.style.display === "none") {
+            mainPage.style.display = "block"
+        }
+
         app.getInfo();
-        const playButton = document.getElementById(`widget`)
-        console.log(playButton)
+        
     })
 
     document.body.addEventListener('click', function (e) {

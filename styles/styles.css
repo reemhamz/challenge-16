@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -191,6 +192,37 @@ a {
   margin: 0;
 }
 
+* {
+  font-family: 'Gotu', sans-serif;
+  color: white;
+  text-shadow: 0.5px 0.5px #FF3C48;
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+button {
+  font-size: 2rem;
+  width: 20%;
+  margin: 0 auto;
+  background-color: #FF9D3E;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  text-shadow: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #FF3C48;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -199,22 +231,46 @@ body {
   text-align: center;
 }
 
-img {
+.wrapper {
+  max-width: 1280px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #FFC9C9;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header img {
+  height: 50%;
+  margin: 0 auto;
+}
+
+main {
+  display: none;
+}
+
+main #cafeImage {
+  height: 100vh;
+}
+
+main #cafeImage img {
   width: 100%;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-}
-
-.wrapper {
-  max-width: 1280px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-main #cafeImage {
-  height: 100vh;
 }
 
 main .audio {

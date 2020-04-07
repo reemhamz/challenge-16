@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+*{
+    font-family: 'Gotu', sans-serif;
+    color: white;
+    text-shadow: 0.5px 0.5px #FF3C48;
+}
+
+h1{
+    font-size: 8rem;
+}
+
+h2{
+    font-size: 3rem;
+    
+}
+
+button{
+    font-size: 2rem;
+    width: 20%;
+    margin: 0 auto;
+    background-color: #FF9D3E;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    text-shadow: none;
+    transition: 0.4s;
+    &:hover{
+        background-color: #FF3C48;
+    }
+}
