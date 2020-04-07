@@ -200,19 +200,51 @@ a {
 
 h1 {
   font-size: 8rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 645px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 3rem;
+  line-height: 1.2;
 }
 
-h3 {
+@media (max-width: 645px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+h3, footer {
   font-size: 1.8rem;
+}
+
+@media (max-width: 645px) {
+  h3, footer {
+    font-size: 1.3rem;
+  }
 }
 
 button {
   font-size: 2rem;
-  width: 20%;
+  width: 450px;
   margin: 0 auto;
   background-color: #FF9D3E;
   border: none;
@@ -225,6 +257,35 @@ button {
 
 button:hover {
   background-color: #FF3C48;
+}
+
+@media (max-width: 645px) {
+  button {
+    font-size: 1.5rem;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+    width: 250px;
+  }
+}
+
+footer {
+  background-color: #FFC9C9;
+  color: #FF3C48;
+}
+
+footer a {
+  color: #FF3C48;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer a:hover {
+  color: white;
+  text-shadow: none;
 }
 
 html {
@@ -252,14 +313,25 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header img {
   height: 50%;
   margin: 0 auto;
+}
+
+@media (max-width: 645px) {
+  header img {
+    height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    height: 30%;
+  }
 }
 
 main {

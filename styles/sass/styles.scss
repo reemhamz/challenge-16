@@ -1,5 +1,5 @@
 @import "./setup";
-@import "./colors";
+@import "./mixins";
 @import "./fonts";
 
 
@@ -25,10 +25,17 @@ header{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    img{
-        height: 50%;
-        margin: 0 auto;
+    justify-content: space-around;
+
+        img{
+            height: 50%;
+            margin: 0 auto;
+            @include tablet{
+                height: 40%;
+            }
+            @include phone{
+                height: 30%;
+            }
     }
 }
 
