@@ -12,6 +12,10 @@ app.collectInfo = function () {
         const playButton = document.getElementById(`widget`)
         console.log(playButton)
     })
+
+    document.body.addEventListener('click', function (e) {
+        console.log(e.target)
+    })
 };
 
 // Make an API fetch request with user inputted data
@@ -20,7 +24,7 @@ app.getInfo = function () {
     unsplashCall = () => {
         const randomPage = Math.floor(Math.random() * 3 + 1) + 10;
         const apiKey = `oXWNN3H3eBxih1adiK0VE1G9BG9XhdURrosI-WlOpzk`;
-        const searchTerm = [`cozy cafe`, `coffee shop`, `cozy coffee`, `cafe`, `cozy`];
+        const searchTerm = [`cozy cafe`, `coffee shop`, `cozy coffee`, `cafe`, `cozy`, `coffee`, `coffee vibes`, `cup of tea`, `latte`, `latte art`, `cup of coffee`, `turkish coffee`];
         const randomSearchTerm = searchTerm[Math.floor(Math.random() * searchTerm.length)]
         console.log(randomSearchTerm)
         const apiURL = `https://api.unsplash.com/search/photos?page=${randomPage}&query=${randomSearchTerm}&client_id=${apiKey}`
@@ -34,7 +38,6 @@ app.getInfo = function () {
 
                     imageGenerator = () => {
                         const randomizeImage = landscapeArray[Math.floor(Math.random() * landscapeArray.length)]
-
                         const imageURL = randomizeImage.urls.regular
                         const imageHeight = randomizeImage.height;
                         document.getElementById('cafeImage').innerHTML = `
